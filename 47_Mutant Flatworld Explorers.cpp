@@ -25,7 +25,7 @@ int main()
         {
             int tmpx = x, tmpy = y;
             char tmpc = c;
-            if (str[i] == 'L')
+            if (str[i] == 'L') // 左轉方向
             {
                 if (c == 'N')
                 {
@@ -44,7 +44,7 @@ int main()
                     c = 'S';
                 }
             }
-            else if (str[i] == 'R')
+            else if (str[i] == 'R') // 右轉方向
             {
                 if (c == 'N')
                 {
@@ -63,7 +63,7 @@ int main()
                     c = 'N';
                 }
             }
-            else if (str[i] == 'F')
+            else if (str[i] == 'F') // 前進，不轉向，可能掉下去
             {
                 if (c == 'N')
                 {
